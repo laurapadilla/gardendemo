@@ -5,10 +5,10 @@ body {
 
   background-color: #ffffff;
   color: #333333;
-  height: 945vh;
+  height: 1000vh;
 }
 
-.main {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,67 +17,22 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
+  width: 1000vh;
 }
 
-.intro {
+/* .intro {
   height: 100vh;
   width: 100vw;
   background-color: black;
-  padding: 40px;
-  text-align: center;
-  position: relative;
-}
+} */
 
-.intro h1 {
-  font-size: 15vmax;
-  color: white;
-  line-height: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.intro p {
-  color: white;
-  font-size: 21px;
-}
-
-.flowers-container {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  height: 100vh;
-  padding: 40px 15rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.flower-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.flower {
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  background-color: blue;
-  margin-right: 30rem;
-  position: relative;
-}
-
-.flower img {
-  height: 40vh;
-}
-
-h3 {
-  font-size: 48px;
-  position: absolute;
-  top: 50%;
-  left: -10rem;
-}
-
-.flex-end {
-  align-self: flex-end;
-}
-
-.center {
-  align-self: center;
+img {
+  width: 720px;
 }
