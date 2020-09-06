@@ -1,7 +1,17 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+const w = window.innerWidth;
+const h = window.innerHeight;
+const dpi = window.devicePixelRatio;
+
+canvas.width = w * dpi;
+canvas.height = h * dpi;
+canvas.style.width = w + "px";
+canvas.style.height = h + "px";
+
+// which context are we talking about? 2d? 3d? something else?
+
+ctx.scale(dpi, dpi);
 ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
